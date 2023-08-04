@@ -242,3 +242,216 @@ body {
 }
 
 
+/* Edit page CSS */
+.edit-form-container {
+  background-color: #f0f4ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-heading {
+  color: #1890ff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #1890ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #40a9ff;
+}
+
+@media (max-width: 768px) {
+  .edit-form-container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
+/*Local storage page CSS  */
+.list-container {
+  background-color: #f0f4ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.page-heading {
+  color: #1890ff;
+}
+
+.profile-cards {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+}
+
+.profile-picture-container {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-details {
+  flex: 1;
+}
+
+.action-buttons {
+  margin-top: 10px;
+}
+.delete-button{
+background-color: #ff1818;
+}
+button {
+  background-color: #1890ff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #40a9ff;
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-picture-container {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .user-details {
+    text-align: left;
+  }
+
+  .action-buttons {
+    margin-top: 10px;
+  }
+}
+/*  Firebase css added */
+/* FirebasePage.css */
+/* FirebasePage.css */
+.firebase-page {
+  background-color: #f0f4ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.page-heading {
+  color: #1890ff;
+}
+
+.profile-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  min-width: 280px;
+  max-width: 350px;
+}
+
+.profile-picture-container {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-details {
+  text-align: center;
+}
+
+.user-details strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.action-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #1890ff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #40a9ff;
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    max-width: 100%;
+  }
+}

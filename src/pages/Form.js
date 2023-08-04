@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { database } from '../firebaseConfig';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './Form.css';
+
 
 const Form = () => {
   // State variables to store form data
@@ -19,7 +23,7 @@ const Form = () => {
     const reader = new FileReader();
     reader.onloadend = () => {
       const profilePictureDataURL = reader.result;
-      
+
       const formData = {
         id, // Add the generated ID to the form data
         name,
@@ -43,6 +47,11 @@ const Form = () => {
       setDob('');
       setProfilePicture(null);
       setEmail('');
+
+      // Show a success toast notification
+      toast.success('Submitted Successfully!', {
+        position: toast.POSITION.TOP_CENTER,
+      });
     };
 
     // Read the selected profile picture as data URL
@@ -79,6 +88,7 @@ const Form = () => {
           <button type="submit">Submit</button>
         </div>
       </form>
+      <ToastContainer />
     </div>
   );
 };
