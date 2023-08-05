@@ -29,7 +29,7 @@ const LocalStoragePage = () => {
 
   return (
     <div className="firebase-page">
-      <h2 className="page-heading">Local storage Data</h2>
+      <h2 className="page-heading">Local Storage Data</h2>
       <ul className="profile-cards">
         {userData.map((user) => (
           <li key={user.id} className="profile-card">
@@ -44,10 +44,11 @@ const LocalStoragePage = () => {
               <strong>Date of Birth:</strong> {user.dob}<br />
               <strong>Email:</strong> {user.email}<br />
               <div className="action-buttons">
-                <button className="delete-button" onClick={() => handleDelete(user.id)}>Delete</button>
-                <button onClick={() => {
+                <button className="edit-btn" onClick={() => {
                   navigate(`/edit/${user.id}`)
                 }}>Edit</button>
+                <button className="delete-button" onClick={() => handleDelete(user.id)}>Delete</button>
+
               </div>
             </div>
           </li>

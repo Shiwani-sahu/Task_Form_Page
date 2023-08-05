@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { database } from '../firebaseConfig';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './Form.css';
+
 
 
 const Form = () => {

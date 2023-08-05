@@ -26,10 +26,11 @@ body {
 
 /* Navigation styles */
 .navbar {
-  background-color: #4400ff;
+  background-color: #2f00ff;
   color: #fff;
   padding: 10px;
   margin-bottom: 20px;
+  justify-content: space-between;
 }
 
 .navbar h1 {
@@ -41,9 +42,6 @@ body {
   display: flex;
 }
 
-.navbar li {
-  margin-right: 20px;
-}
 
 .navbar li:last-child {
   margin-right: 0;
@@ -340,7 +338,15 @@ button:hover {
 }
 .delete-button{
 background-color: #ff1818;
+width: 100px;
 }
+ .delete-button:hover {
+  background-color: #ff4040;
+  }
+ .edit-btn {
+      background-color: #7c18ff;
+      width: 100px;
+    }
 button {
   background-color: #1890ff;
   color: #fff;
@@ -455,3 +461,4 @@ button:hover {
     max-width: 100%;
   }
 }
+

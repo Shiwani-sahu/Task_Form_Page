@@ -67,11 +67,12 @@ const FirebasePage = () => {
               <strong>Date of Birth:</strong> {user.dob}<br />
               <strong>Email:</strong> {user.email}<br />
                <div className="action-buttons">
-                <button className="delete-button" onClick={() => handleDelete(user.id) }>Delete</button>
-                <button onClick={() => {
+                <button className="edit-btn" onClick={() => {
                 navigate(`/edit/${user.id}`)
                 }
                 }>Edit </button>
+                <button className="delete-button" onClick={() => handleDelete(user.id) }>Delete</button>
+
               </div>
             </div>
           </li>
